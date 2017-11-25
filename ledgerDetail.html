@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>Block Wallet</title>
+    <link rel="stylesheet" href="./style/weui.css"/>
+    <link rel="stylesheet" href="./style/wallet.css"/>
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+</head>
+<body ontouchstart>
+    <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+    <div class="container" id="container"></div>
+<div class="page">
+    <div class="page__hd" id="back">
+        <i class="icon iconfont icon-back" style="margin-left: 5px;">
+            <span class="page__label">交易详细</span>
+        </i>
+    </div>
+    <div class="page__bd">
+        <div class="weui-flex ledger-detail-area">
+            <div class="weui-flex__item">
+                <p>交易金额</p>
+            </div>
+            <div class="weui-flex__item">
+                <div class="icon_sp_area" style="text-align: right">
+                    <div class="icon-box__ctn ledger-fr">
+                        <p>交易成功</p>
+                    </div>
+                    <i class="weui-icon-success"></i>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex ledger-detail-area">
+            <div class="weui-flex__item">
+                <p class="ledger-expenses ledger-detail-number">-188￥</p>
+            </div>
+        </div>
+        <div class="weui-cells__title">&nbsp;</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-cell__hd"><label class="weui-label">发款方</label></div>
+            </div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-flex__item">
+                    <p class="wallet-address">0xB9a9x4A8w254987AbbF89as8363zx48as8/7wqW4AbA22hN776</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-cell__hd"><label class="weui-label">收款方</label></div>
+            </div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-flex__item">
+                    <p class="wallet-address">0B4A8w87B3/194C987AbbF89as8363zx48as8/7wqW4AbA22hN776</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-cell__hd"><label class="weui-label">备注</label></div>
+            </div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-flex__item">
+                    <p class="wallet-address">transfer</p>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells__title">&nbsp;</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-cell__hd"><label class="weui-label">区块号</label></div>
+            </div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-flex__item">
+                    <p class="wallet-address">12345</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-cell__hd"><label class="weui-label">交易号</label></div>
+            </div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-flex__item">
+                    <p class="wallet-address">0B4A8w87B3/194C987AbbF89as8363bA22hN776</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-cell__hd"><label class="weui-label">交易时间</label></div>
+            </div>
+            <div class="weui-flex ledger-detail-area">
+                <div class="weui-flex__item">
+                    <p class="wallet-address">2017/11/25 15:29</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="js_dialog" id="iosDialog1" style="display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__hd"><strong class="weui-dialog__title">交易确认</strong></div>
+        <div class="weui-dialog__bd">请确认填写信息，并继续交易！</div>
+        <div class="weui-dialog__ft">
+            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default" id="cancel">取消</a>
+            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary" id="next">继续</a>
+        </div>
+    </div>
+</div>
+<div id="loadingToast" style="display:none;">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-loading weui-icon_toast"></i>
+        <p class="weui-toast__content">数据加载中</p>
+    </div>
+</div>
+
+</script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script src="./javascript/jquery.min.js"></script>
+    <script src="./javascript/ledgerDetail.js"></script>
+</body>
+</html>

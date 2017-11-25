@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>Block Wallet</title>
+    <link rel="stylesheet" href="./style/weui.css"/>
+    <link rel="stylesheet" href="./style/wallet.css"/>
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+</head>
+<body ontouchstart>
+    <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+    <div class="container" id="container"></div>
+<div class="page">
+    <div class="page__hd" id="back">
+        <i class="icon iconfont icon-back" style="margin-left: 5px;">
+            <span class="page__label">剩余货币</span>
+        </i>
+    </div>
+    <div class="page__bd">
+        <div class="weui-flex">
+            <div class="weui-flex__item tx-center">
+                <i class="icon iconfont icon-zhuanshi icon-yellow"></i>
+            </div>
+        </div>
+        <div class="weui-flex">
+            <div class="weui-flex__item tx-center">
+                <p class="wallet-title">账户货币</p>
+                <p class="wallet-number">￥79.03</p>
+            </div>
+        </div>
+        <div class="weui-flex" style="margin-top: 15px;">
+            <div class="weui-flex__item tx-center">
+                <p class="wallet-title">钱包地址</p>
+                <p class="wallet-address">0xB9a9x4A8w254987AbbF89as8363zx48as8/7wqW4AbA22hN776</p>
+            </div>
+        </div>
+        <div class="weui-btn-area weui-btn__footer">
+            <a class="weui-btn weui-btn_primary" href="javascript:" id="downloadAddress">钱包地址导出</a>
+        </div>
+    </div>
+</div>
+<div id="loadingToast" style="display:none;">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-loading weui-icon_toast"></i>
+        <p class="weui-toast__content">数据加载中</p>
+    </div>
+</div>
+</script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script src="./javascript/jquery.min.js"></script>
+    <script src="./javascript/mywallet.js"></script>
+</body>
+</html>
