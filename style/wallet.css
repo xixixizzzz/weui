@@ -1,0 +1,61 @@
+.page {
+    background: #f8f8f8;
+    min-height: 600px;
+}
+
+.page__hd {
+    height: 45px;
+    background: rgba(0, 0, 0, 0.73);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.page__hd .page__title {
+    padding: 2px;
+    text-align: center;
+}
+
+.page__hd .page__label {
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+}
+
+.page__bd {
+    padding: 3px;
+}
+
+.weui-flex__money {
+    width: 100%;
+}
+.weui-flex__money img {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.weui-cells_form {
+    /* position: relative; */
+}
+
+.weui-btn__footer {
+    position: relative;
+    top: 100px;
+}
+
+.grids-header {
+    background: #999999;
+    color: #fff;
+}
+
+.grids-header .iconfont,.weui-grid__label {
+    color: #fff;
+    line-height: 1;
+}
+
+.page__bd_menu {
+    padding: 0;
+}
